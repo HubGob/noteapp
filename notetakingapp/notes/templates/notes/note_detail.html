@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <h2>{{ note.title }}</h2>
+        <p>{{ note.content }}</p>
+        <a href="{% url 'note_update' note.pk %}" class="btn btn-warning">Edit</a>
+        <a href="{% url 'note_delete' note.pk %}" class="btn btn-danger">Delete</a>
+        <a href="{% url 'note_list' %}" class="btn btn-secondary">Back to Notes</a>
+    </div>
+</div>
+{% endblock %}
