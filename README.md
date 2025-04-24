@@ -1,3 +1,1 @@
-# noteapp
-
-gfgdfhdth
+# notenote taking app
